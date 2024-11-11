@@ -5,14 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        // 사용자의 로컬 IP 주소 또는 로컬 PC URL
-        const localURL = "http://13.125.69.206:8080/";  // 예시 IP 주소와 포트 번호
-
-        // 페이지가 로드될 때 리다이렉트
-        window.location.href = localURL;
-    </script>
+  (function(n,i,v,r,s,c,x,z){x=window.AwsRumClient={q:[],n:n,i:i,v:v,r:r,c:c};window[n]=function(c,p){x.q.push({c:c,p:p});};z=document.createElement('script');z.async=true;z.src=s;document.head.insertBefore(z,document.head.getElementsByTagName('script')[0]);})(
+    'cwr',
+    '190689eb-32f2-45c6-ad9a-f9fba5792e3a',
+    '1.0.0',
+    'ap-northeast-2',
+    'https://client.rum.us-east-1.amazonaws.com/1.19.0/cwr.js',
+    {
+      sessionSampleRate: 1,
+      identityPoolId: "ap-northeast-2:3c4899dd-544c-4748-8597-a94c645855cb",
+      endpoint: "https://dataplane.rum.ap-northeast-2.amazonaws.com",
+      telemetries: ["performance","errors","http"],
+      allowCookies: true,
+      enableXRay: true
+    }
+  );
+</script>
 </head>
 <body>
-    <p>Redirecting to local PC...</p>
+    <h1>index Page</h1>
+    <a href="./indexPage.html">index Page!!</a>
+    <br>
+    <a href="./makePage.html">make Page!!</a>
+    <br>
+    <a href="./orderPage.html">order Page!!</a>
 </body>
 </html>
